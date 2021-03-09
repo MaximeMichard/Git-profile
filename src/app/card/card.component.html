@@ -1,0 +1,31 @@
+<form #f="ngForm" (ngSubmit)="getValues(f.value)">
+  <input
+    type="text"
+    id="search"
+    placeholder="Search a GitHub User"
+    name="user"
+    ngModel
+  />
+  <button>Envoyer</button>
+</form>
+<div class="card">
+  <div class="img">
+    <img src="{{ this.git.img }}" alt="" />
+  </div>
+  <div class="description">
+    <div class="detail">
+      <h1>{{ this.git.login }}</h1>
+      <h3>{{ this.git.bio }}</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas vitae
+        beatae, quaerat modi ut architecto blanditiis atque inventore error
+        accusantium ?
+      </p>
+    </div>
+    <div class="stat">
+      <p>Follower : {{ this.git.follower }}</p>
+      <p>Repos :{{ this.git.repos }}</p>
+      <p>Gits : {{ this.git.gits }}</p>
+    </div>
+  </div>
+</div>
