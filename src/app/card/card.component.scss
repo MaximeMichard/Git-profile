@@ -39,6 +39,13 @@ input {
   font-size: 1rem;
   padding: 3rem;
 }
+input::placeholder {
+  color: #bbb;
+}
+
+input:focus {
+  outline: none;
+}
 button {
   background-color: #4c2885;
   color: #fff;
