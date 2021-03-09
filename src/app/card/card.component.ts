@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import { GitService } from '../../services/git.service';
 import { Git } from '../../models/git.model';
-import { User } from '../../models/user.model';
 
 @Component({
   selector: 'app-card',
@@ -12,7 +10,6 @@ import { User } from '../../models/user.model';
 export class CardComponent implements OnInit {
   git: Git;
   user: string;
-  urlGit: any;
 
   constructor(private ServiceGit: GitService) {
     this.git = new Git();
