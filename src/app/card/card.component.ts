@@ -25,6 +25,7 @@ export class CardComponent implements OnInit {
       this.git.follower = response.followers;
       this.git.repos = response.public_repos;
       this.git.gits = response.public_gists;
+      this.git.following = response.following;
     });
   }
 
