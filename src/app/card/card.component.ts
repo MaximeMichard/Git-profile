@@ -17,7 +17,6 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     this.ServiceGit.getGit(this.git).subscribe((response) => {
-      console.log(response);
       this.git.img = response.avatar_url;
       this.git.login = response.login;
       this.git.bio = response.bio;
